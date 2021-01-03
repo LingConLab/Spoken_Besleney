@@ -1,0 +1,316 @@
+{
+  "corpus_name": "conlab_besleney",
+  "input_format": "json",
+  "debug": false,
+  "media": true,
+  "media_length": 60,
+  "max_context_expand": 5,
+  "max_distance_filter": 200000,
+  "max_docs_retrieve": 9999,
+  "integer_meta_fields": ["year of birth"],
+  "max_words_in_sentence": 40,
+  "query_timeout": 60,
+  "viewable_meta": [
+    "filename",
+    "title",
+    "place",
+    "speakers",
+    "year"
+  ],
+  "sentence_meta": [
+    "speaker",
+    "speaker_name",
+    "dialect",
+    "gender",
+    "place of birth",
+    "year of birth",
+    "education",
+    "knowledge of standard kabardian",
+    "knowledge of standard adyghe"
+  ],
+  "search_meta": {
+    "columns": [
+      [
+        {"type": "input_text", "name": "title", "placeholder": "Title"},
+        {"type": "separator"},
+        {"type": "input_number", "name": "year_from", "placeholder": "Year: from"},
+        {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
+      ]
+    ],
+    "stat_options": [
+      "year",
+      "title"
+    ]
+  },
+  "word_fields":
+  [
+  ],
+  "languages": ["besleney", "russian"],
+  "transliterations": ["original", "IPA"],
+  "input_methods": ["normal", "strict"],
+  "interface_languages": {"en": "English", "ru": "Russian"},
+  "all_language_search_enabled": true,
+  "gloss_search_enabled": true,
+  "ambiguous_analyses": true,
+  "lang_props":
+  {
+    "besleney":
+    {
+      "dictionary_categories": ["vType", "nType"],
+      "gloss_shortcuts": {
+        "case": "(obl(\\.pl)?|abs|erg|ins|adv)",
+        "nom": "abs",
+        "erg": "obl(\\.pl)?",
+        "app": "(dat|ben|mal|(gen)?loc|com|instr|inadv)",
+        "pers": "(([123](sg|pl)|rel|rec|rfl)\\.(abs|erg|io))",
+        "pers.abs": "(([123](sg|pl)|rel|rec|rfl)\\.abs)",
+        "pers.erg": "(([123](sg|pl)|rel|rec|rfl)\\.erg)",
+        "pers.io": "(([123](sg|pl)|rel|rec|rfl)\\.io)",
+        "pers.p": "(([123](sg|pl)|rel|rec)\\.p)",
+        "tense": "(pst|fut|aux)",
+        "sfx": "(re|ill|el|cont)"
+      },
+      "gr_fields_order": ["abbr", "stem_alt", "vType", "nType", "numType", "dir", "appl", "v_deriv", "persAbs", "numAbs", "persErg", "numErg", "persIO", "numIO", "rel", "dyn", "poss", "num_deriv", "posChange", "v_form", "ptcp_form", "vSfx", "tense", "person", "number", "case", "clitics", "incorp", "add"],
+      "gramm_selection": {
+        "columns": [
+          [
+            {"type": "gramm", "value": "1pl.abs", "category": "1pl.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gramm", "value": "1pl.erg", "category": "1pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gramm", "value": "1pl.io", "category": "1pl.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gramm", "value": "1pl.pr", "category": "1pl.pr", "tooltip": "посессивный показатель"},
+            {"type": "gramm", "value": "1sg.abs", "category": "1sg.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gramm", "value": "1sg.erg", "category": "1sg.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gramm", "value": "1sg.io", "category": "1sg.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gramm", "value": "1sg.pr", "category": "1sg.pr", "tooltip": "посессивный показатель"},
+            {"type": "gramm", "value": "2pl.abs", "category": "2pl.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gramm", "value": "2pl.erg", "category": "2pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gramm", "value": "2pl.io", "category": "2pl.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gramm", "value": "2pl.pr", "category": "2pl.pr", "tooltip": "посессивный показатель"}
+          ],
+          [            
+            {"type": "gramm", "value": "2sg.abs", "category": "2sg.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gramm", "value": "2sg.erg", "category": "2sg.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gramm", "value": "2sg.io", "category": "2sg.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gramm", "value": "2sg.pr", "category": "2sg.pr", "tooltip": "посессивный показатель"},
+            {"type": "gramm", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gramm", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gramm", "value": "3pl.io", "category": "3pl.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gramm", "value": "3pl.pr", "category": "3pl.pr", "tooltip": "посессивный показатель"},
+            {"type": "gramm", "value": "3sg.erg", "category": "3sg.erg", "tooltip": "личный префикс, эргатив"}
+          ],
+          [
+            {"type": "gramm", "value": "3sg.io", "category": "3sg.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gramm", "value": "abs", "category": "abs", "tooltip": "абсолютив"},
+            {"type": "gramm", "value": "add", "category": "add", "tooltip": "аддитив"},
+            {"type": "gramm", "value": "adj", "category": "adj", "tooltip": "адъективизатор"},
+            {"type": "gramm", "value": "adv", "category": "adv", "tooltip": "адвербиалис"},
+            {"type": "gramm", "value": "allat", "category": "allat", "tooltip": "аллативный суффикс"},
+            {"type": "gramm", "value": "ap", "category": "ap", "tooltip": "антипассив"},
+            {"type": "gramm", "value": "apl", "category": "apl", "tooltip": "ассоциативное множественное число"},
+            {"type": "gramm", "value": "aug", "category": "aug", "tooltip": "аугментатив"},
+            {"type": "gramm", "value": "aux", "category": "aux", "tooltip": "морфологизованный вспомогательный глагол"},
+            {"type": "gramm", "value": "ben", "category": "ben", "tooltip": "бенефактив"},
+            {"type": "gramm", "value": "caus", "category": "caus", "tooltip": "каузатив"}
+          ],
+          [
+            {"type": "gramm", "value": "circ", "category": "circ", "tooltip": "движение вокруг"},
+            {"type": "gramm", "value": "cnv", "category": "cnv", "tooltip": "конверб"},
+            {"type": "gramm", "value": "com", "category": "com", "tooltip": "комитатив"},
+            {"type": "gramm", "value": "cond", "category": "cond", "tooltip": "кондиционалис"},
+            {"type": "gramm", "value": "coord", "category": "coord", "tooltip": "показатель сочинения"},
+            {"type": "gramm", "value": "cs", "category": "cs", "tooltip": "консекутив"},
+            {"type": "gramm", "value": "dat", "category": "dat", "tooltip": "дативный аппликатив"},
+            {"type": "gramm", "value": "dfcl", "category": "dfcl", "tooltip": "дифицилитив ('трудно')"},
+            {"type": "gramm", "value": "dir", "category": "dir", "tooltip": "директив"},
+            {"type": "gramm", "value": "down", "category": "down", "tooltip": "показатель 'вниз'"}
+          ],
+          [
+            {"type": "gramm", "value": "dur", "category": "dur", "tooltip": "'на протяжении’"},
+            {"type": "gramm", "value": "dyn", "category": "dyn", "tooltip": "динамичность"},
+            {"type": "gramm", "value": "elat", "category": "elat", "tooltip": "элативный суффикс"},
+            {"type": "gramm", "value": "emp", "category": "emp", "tooltip": "эмфаза"},
+            {"type": "gramm", "value": "fcl", "category": "fcl", "tooltip": "фацилитив ('легко')"},
+            {"type": "gramm", "value": "freq", "category": "freq", "tooltip": "фреквентатив"},
+            {"type": "gramm", "value": "fut", "category": "fut", "tooltip": "будущее время"},
+            {"type": "gramm", "value": "hes", "category": "hes", "tooltip": "хезитация"},
+            {"type": "gramm", "value": "hort", "category": "hort", "tooltip": "гортатив"},
+            {"type": "gramm", "value": ".imp", "category": ".imp", "tooltip": "императив"}
+          ],
+          [           
+            {"type": "gramm", "value": "inc", "category": "inc", "tooltip": "инцептив"},
+            {"type": "gramm", "value": "inch", "category": "inch", "tooltip": "инхоатив "},
+            {"type": "gramm", "value": "ins", "category": "ins", "tooltip": "инструменталис"},
+            {"type": "gramm", "value": "int", "category": "int", "tooltip": "интенсивность"},
+            {"type": "gramm", "value": "interj", "category": "interj", "tooltip": "междометие"},
+            {"type": "gramm", "value": "ipf", "category": "ipf", "tooltip": "имперфект"},
+            {"type": "gramm", "value": "juss", "category": "juss", "tooltip": "юссив"},
+            {"type": "gramm", "value": "lat", "category": "lat", "tooltip": "лативный суффикс"},
+            {"type": "gramm", "value": "lim", "category": "lim", "tooltip": "лимитатив"},
+            {"type": "gramm", "value": "lnk", "category": "lnk", "tooltip": "линкер при числительных"},
+            {"type": "gramm", "value": "loc", "category": "loc", "tooltip": "локативный преверб"}
+          ],
+          [
+            {"type": "gramm", "value": "mal", "category": "mal", "tooltip": "малефактив"},
+            {"type": "gramm", "value": "neg", "category": "neg", "tooltip": "отрицание"},
+            {"type": "gramm", "value": "nml", "category": "nml", "tooltip": "номинализация"},
+            {"type": "gramm", "value": "obl", "category": "obl", "tooltip": "косвенный падеж"},
+            {"type": "gramm", "value": "obl.pl", "category": "obl.pl", "tooltip": "косвенный падеж, множественное число "},
+            {"type": "gramm", "value": "ord", "category": "ord", "tooltip": "порядковое числительное"},
+            {"type": "gramm", "value": "pl", "category": "pl", "tooltip": "множественное число"},
+            {"type": "gramm", "value": "poss", "category": "poss", "tooltip": "посессив"}
+          ],
+          [            
+            {"type": "gramm", "value": "pot", "category": "pot", "tooltip": "потенциалис"},
+            {"type": "gramm", "value": "pred", "category": "pred", "tooltip": "предикативный показатель / копула"},
+            {"type": "gramm", "value": "pref", "category": "pref", "tooltip": "префикс при глаголе 'сказать'"},
+            {"type": "gramm", "value": "pst", "category": "pst", "tooltip": "прошедшее время"},
+            {"type": "gramm", "value": "ptcl", "category": "ptcl", "tooltip": "частица"},
+            {"type": "gramm", "value": "q", "category": "q", "tooltip": "вопрос"},
+            {"type": "gramm", "value": "quot", "category": "quot", "tooltip": "квотатив"},
+            {"type": "gramm", "value": "re", "category": "re", "tooltip": "рефактив/реверсив"},
+            {"type": "gramm", "value": "rec.erg", "category": "rec.erg", "tooltip": "реципрок"},
+            {"type": "gramm", "value": "rec.io", "category": "rec.io", "tooltip": "реципрок"},
+            {"type": "gramm", "value": "rel.erg", "category": "rel.erg", "tooltip": "относительный префикс"},
+            {"type": "gramm", "value": "rel.io", "category": "rel.io", "tooltip": "релятивизация косвенного объекта"},
+            {"type": "gramm", "value": "rel.mnr", "category": "rel.mnr", "tooltip": "релятивизация способа действия"}
+          ],
+          [
+            {"type": "gramm", "value": "rel.pr", "category": "rel.pr", "tooltip": "релятивизация посессора"},
+            {"type": "gramm", "value": "res", "category": "res", "tooltip": "результатив"},
+            {"type": "gramm", "value": "rfl.abs", "category": "rfl.abs", "tooltip": "рефлексив"},
+            {"type": "gramm", "value": "rfl.io", "category": "rfl.io", "tooltip": "рефлексив"},
+            {"type": "gramm", "value": "rs", "category": "rs", "tooltip": "ретроспективный сдвиг"},
+            {"type": "gramm", "value": "rsn", "category": "rsn", "tooltip": "причинный аппликатив (при релятивизации)"},
+            {"type": "gramm", "value": "sim", "category": "sim", "tooltip": "конверб одновременности"},
+            {"type": "gramm", "value": "suf", "category": "suf", "tooltip": "неразобранный суффикс"},
+            {"type": "gramm", "value": "temp", "category": "temp", "tooltip": "темпоральный аппликатив (при релятивизации)"},
+            {"type": "gramm", "value": "up", "category": "up", "tooltip": "показатель 'вверх'"}
+          ]
+        ]
+      },
+      "gloss_selection": {
+        "columns": [
+          [
+            {"type": "gloss", "value": "1pl.abs", "category": "1pl.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gloss", "value": "1pl.erg", "category": "1pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gloss", "value": "1pl.io", "category": "1pl.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gloss", "value": "1pl.pr", "category": "1pl.pr", "tooltip": "посессивный показатель"},
+            {"type": "gloss", "value": "1sg.abs", "category": "1sg.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gloss", "value": "1sg.erg", "category": "1sg.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gloss", "value": "1sg.io", "category": "1sg.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gloss", "value": "1sg.pr", "category": "1sg.pr", "tooltip": "посессивный показатель"},
+            {"type": "gloss", "value": "2pl.abs", "category": "2pl.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gloss", "value": "2pl.erg", "category": "2pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gloss", "value": "2pl.io", "category": "2pl.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gloss", "value": "2pl.pr", "category": "2pl.pr", "tooltip": "посессивный показатель"}
+          ],
+          [            
+            {"type": "gloss", "value": "2sg.abs", "category": "2sg.abs", "tooltip": "личный префикс, абсолютив"},
+            {"type": "gloss", "value": "2sg.erg", "category": "2sg.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gloss", "value": "2sg.io", "category": "2sg.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gloss", "value": "2sg.pr", "category": "2sg.pr", "tooltip": "посессивный показатель"},
+            {"type": "gloss", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gloss", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
+            {"type": "gloss", "value": "3pl.io", "category": "3pl.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gloss", "value": "3pl.pr", "category": "3pl.pr", "tooltip": "посессивный показатель"},
+            {"type": "gloss", "value": "3sg.erg", "category": "3sg.erg", "tooltip": "личный префикс, эргатив"}
+          ],
+          [
+            {"type": "gloss", "value": "3sg.io", "category": "3sg.io", "tooltip": "личный префикс, косвенный объект"},
+            {"type": "gloss", "value": "abs", "category": "abs", "tooltip": "абсолютив"},
+            {"type": "gloss", "value": "add", "category": "add", "tooltip": "аддитив"},
+            {"type": "gloss", "value": "adj", "category": "adj", "tooltip": "адъективизатор"},
+            {"type": "gloss", "value": "adv", "category": "adv", "tooltip": "адвербиалис"},
+            {"type": "gloss", "value": "allat", "category": "allat", "tooltip": "аллативный суффикс"},
+            {"type": "gloss", "value": "ap", "category": "ap", "tooltip": "антипассив"},
+            {"type": "gloss", "value": "apl", "category": "apl", "tooltip": "ассоциативное множественное число"},
+            {"type": "gloss", "value": "aug", "category": "aug", "tooltip": "аугментатив"},
+            {"type": "gloss", "value": "aux", "category": "aux", "tooltip": "морфологизованный вспомогательный глагол"},
+            {"type": "gloss", "value": "ben", "category": "ben", "tooltip": "бенефактив"},
+            {"type": "gloss", "value": "caus", "category": "caus", "tooltip": "каузатив"}
+          ],
+          [
+            {"type": "gloss", "value": "circ", "category": "circ", "tooltip": "движение вокруг"},
+            {"type": "gloss", "value": "cnv", "category": "cnv", "tooltip": "конверб"},
+            {"type": "gloss", "value": "com", "category": "com", "tooltip": "комитатив"},
+            {"type": "gloss", "value": "cond", "category": "cond", "tooltip": "кондиционалис"},
+            {"type": "gloss", "value": "coord", "category": "coord", "tooltip": "показатель сочинения"},
+            {"type": "gloss", "value": "cs", "category": "cs", "tooltip": "консекутив"},
+            {"type": "gloss", "value": "dat", "category": "dat", "tooltip": "дативный аппликатив"},
+            {"type": "gloss", "value": "dfcl", "category": "dfcl", "tooltip": "дифицилитив ('трудно')"},
+            {"type": "gloss", "value": "dir", "category": "dir", "tooltip": "директив"},
+            {"type": "gloss", "value": "down", "category": "down", "tooltip": "показатель 'вниз'"}
+          ],
+          [
+            {"type": "gloss", "value": "dur", "category": "dur", "tooltip": "'на протяжении’"},
+            {"type": "gloss", "value": "dyn", "category": "dyn", "tooltip": "динамичность"},
+            {"type": "gloss", "value": "elat", "category": "elat", "tooltip": "элативный суффикс"},
+            {"type": "gloss", "value": "emp", "category": "emp", "tooltip": "эмфаза"},
+            {"type": "gloss", "value": "fcl", "category": "fcl", "tooltip": "фацилитив ('легко')"},
+            {"type": "gloss", "value": "freq", "category": "freq", "tooltip": "фреквентатив"},
+            {"type": "gloss", "value": "fut", "category": "fut", "tooltip": "будущее время"},
+            {"type": "gloss", "value": "hes", "category": "hes", "tooltip": "хезитация"},
+            {"type": "gloss", "value": "hort", "category": "hort", "tooltip": "гортатив"},
+            {"type": "gloss", "value": ".imp", "category": ".imp", "tooltip": "императив"}
+          ],
+          [           
+            {"type": "gloss", "value": "inc", "category": "inc", "tooltip": "инцептив"},
+            {"type": "gloss", "value": "inch", "category": "inch", "tooltip": "инхоатив "},
+            {"type": "gloss", "value": "ins", "category": "ins", "tooltip": "инструменталис"},
+            {"type": "gloss", "value": "int", "category": "int", "tooltip": "интенсивность"},
+            {"type": "gloss", "value": "interj", "category": "interj", "tooltip": "междометие"},
+            {"type": "gloss", "value": "ipf", "category": "ipf", "tooltip": "имперфект"},
+            {"type": "gloss", "value": "juss", "category": "juss", "tooltip": "юссив"},
+            {"type": "gloss", "value": "lat", "category": "lat", "tooltip": "лативный суффикс"},
+            {"type": "gloss", "value": "lim", "category": "lim", "tooltip": "лимитатив"},
+            {"type": "gloss", "value": "lnk", "category": "lnk", "tooltip": "линкер при числительных"},
+            {"type": "gloss", "value": "loc", "category": "loc", "tooltip": "локативный преверб"}
+          ],
+          [
+            {"type": "gloss", "value": "mal", "category": "mal", "tooltip": "малефактив"},
+            {"type": "gloss", "value": "neg", "category": "neg", "tooltip": "отрицание"},
+            {"type": "gloss", "value": "nml", "category": "nml", "tooltip": "номинализация"},
+            {"type": "gloss", "value": "obl", "category": "obl", "tooltip": "косвенный падеж"},
+            {"type": "gloss", "value": "obl.pl", "category": "obl.pl", "tooltip": "косвенный падеж, множественное число "},
+            {"type": "gloss", "value": "ord", "category": "ord", "tooltip": "порядковое числительное"},
+            {"type": "gloss", "value": "pl", "category": "pl", "tooltip": "множественное число"},
+            {"type": "gloss", "value": "poss", "category": "poss", "tooltip": "посессив"}
+          ],
+          [            
+            {"type": "gloss", "value": "pot", "category": "pot", "tooltip": "потенциалис"},
+            {"type": "gloss", "value": "pred", "category": "pred", "tooltip": "предикативный показатель / копула"},
+            {"type": "gloss", "value": "pref", "category": "pref", "tooltip": "префикс при глаголе 'сказать'"},
+            {"type": "gloss", "value": "pst", "category": "pst", "tooltip": "прошедшее время"},
+            {"type": "gloss", "value": "ptcl", "category": "ptcl", "tooltip": "частица"},
+            {"type": "gloss", "value": "q", "category": "q", "tooltip": "вопрос"},
+            {"type": "gloss", "value": "quot", "category": "quot", "tooltip": "квотатив"},
+            {"type": "gloss", "value": "re", "category": "re", "tooltip": "рефактив/реверсив"},
+            {"type": "gloss", "value": "rec.erg", "category": "rec.erg", "tooltip": "реципрок"},
+            {"type": "gloss", "value": "rec.io", "category": "rec.io", "tooltip": "реципрок"},
+            {"type": "gloss", "value": "rel.erg", "category": "rel.erg", "tooltip": "относительный префикс"},
+            {"type": "gloss", "value": "rel.io", "category": "rel.io", "tooltip": "релятивизация косвенного объекта"},
+            {"type": "gloss", "value": "rel.mnr", "category": "rel.mnr", "tooltip": "релятивизация способа действия"}
+          ],
+          [
+            {"type": "gloss", "value": "rel.pr", "category": "rel.pr", "tooltip": "релятивизация посессора"},
+            {"type": "gloss", "value": "res", "category": "res", "tooltip": "результатив"},
+            {"type": "gloss", "value": "rfl.abs", "category": "rfl.abs", "tooltip": "рефлексив"},
+            {"type": "gloss", "value": "rfl.io", "category": "rfl.io", "tooltip": "рефлексив"},
+            {"type": "gloss", "value": "rs", "category": "rs", "tooltip": "ретроспективный сдвиг"},
+            {"type": "gloss", "value": "rsn", "category": "rsn", "tooltip": "причинный аппликатив (при релятивизации)"},
+            {"type": "gloss", "value": "sim", "category": "sim", "tooltip": "конверб одновременности"},
+            {"type": "gloss", "value": "suf", "category": "suf", "tooltip": "неразобранный суффикс"},
+            {"type": "gloss", "value": "temp", "category": "temp", "tooltip": "темпоральный аппликатив (при релятивизации)"},
+            {"type": "gloss", "value": "up", "category": "up", "tooltip": "показатель 'вверх'"}
+          ]
+        ]
+      }
+    },
+    "russian":
+    {
+      "gr_fields_order": [],
+      "gloss_shortcuts": {
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{% if word_fields %}
+	{% for field in word_fields %}
+		{{ _('wordfield_' + field) | capitalize }}: <input type="text" class="search_input" name="{{ field }}1" id="{{ field }}1"><br>
+	{% endfor %}
+{% endif %}
+{% if sentence_meta and sentence_meta|length > 0 %}
+<hr class="separator">
+	{% for field in sentence_meta %}
+		{% if int_meta_fields and field in int_meta_fields %}
+		{{ _('metafield_' + field) | capitalize }}: <input type="number" class="search_input_num" name="sent_meta_{{ field }}_FR1" id="sent_meta_{{ field }}1">&ndash;<input type="number" class="search_input_num" name="sent_meta_{{ field }}_TO1" id="sent_meta_{{ field }}1"><br>
+		{% elif field == 'speaker' %}
+		{{ _('metafield_' + field) | capitalize }}: <select class="search_input" name="sent_meta_{{ field }}1" id="sent_meta_{{ field }}1">
+		<option value="">{{ _('any') }}</option>
+		<option value="vpt1934f">ask_1956_f</option>
+		<option value="eds1930f">emg_1990_f</option>
+		<option value="kam1926f">evn_19XX_m</option>
+		<option value="emk1967f">had_1917_m</option>
+		<option value="smm1950f">hbu_1928_f</option>
+		<option value="eak1977m">hha_1970_m</option>
+		<option value="kas1964f">hnd_1958_f</option>
+		<option value="tsk1931f">hrm_1965_f</option>
+		<option value="gsm1929f">ink_1955_f</option>
+		<option value="lmp1941f">tmb_1940_m</option>
+		<option value="mdc1963f">tsh_1943_f</option>
+		<option value="tna1930f">tyu_1930_m</option>
+		<option value="sjt1964f">yyy_19XX_f</option>
+		<option value="lat1978f">zzz_19XX_f</option>
+		</select><br>
+		{% elif field == 'gender' %}
+		{{ _('metafield_' + field) | capitalize }}: <select class="search_input" name="sent_meta_{{ field }}1" id="sent_meta_{{ field }}1">
+		<option value="">{{ _('any') }}</option>
+		<option value="m">{{ _('m') }}</option>
+		<option value="f">{{ _('f') }}</option>
+		</select><br>
+		{% else %}
+		{{ _('metafield_' + field) | capitalize }}: <input type="text" class="search_input" name="sent_meta_{{ field }}1" id="sent_meta_{{ field }}1"><br>
+		{% endif %}
+	{% endfor %}
+{% endif %}
+{{ _('Analyses: ') }}<select name="n_ana1" id="n_ana1" class="search_input">
+<option value="any" selected>{{ _('any number of analyses') }}</option>
+<option value="nonambiguous">{{ _('only with analysis') }}</option>
+<option value="none">{{ _('only without analysis') }}</option>
+</select><br>
+{{ _('Position in sentence: ') }}<input type="number" name="sentence_index1" id="sentence_index1" value="" placeholder="1" class="search_input distance_input"><br>
