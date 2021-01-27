@@ -21,7 +21,7 @@ msgstr ""
 # ********  Please fill in the following strings:  ********
 
 msgid "corpus_title"
-msgstr "Устный корпус бесленеевского диалекта кабардино-черкесского языка"
+msgstr "Spoken Corpus of the Besleney Dialect of East Circassian"
 
 msgid "corpus_name"
 msgstr "spoken_besleney"
@@ -1888,3 +1888,37 @@ msgstr "Vera Maltseva – automatic parser creation, text processing in Elan (co
 
 msgid "Елена Валерьевна Тенькова – написание и поддержка макроса для записи результатов автоматического парсирования текстов в программу ELAN"
 msgstr "Elena Tenkova – macros for writing of results of automatic parsing of texts in Elan files"
+
+
+msgid "Устный корпус бесленеевского диалекта"
+msgstr "Spoken Corpus of the Besleney Dialect"
+
+msgid "кабардино-черкесского языка"
+msgstr "of East Circassian"
+
+msgid "Устный бесленеевский корпус включает разножанровые тексты на бесленеевском диалекте кабардино-черкесского языка, записанные в ауле Уляп Республики Адыгея. Бесленеевский диалект - западный периферийный диалект кабардино-черкесского языка, обнаруживающий множество отличий от литературного варианта. Уляпский говор бесленеевского диалекта также активно взаимодействует с близкородственным адыгейским языком."
+msgstr "The spoken Besleney corpus includes texts of a wide variety of genres recorded in the village of Ulyap in the Republic of Adygea.  The Besleney dialect is the western-most dialect of the Kabardian (East Circassian) language, and it contains a significant number of differences from the literary standard.  The Ulyap subdialect of the Besleney dialect also actively interacts with the closely related West Circassian language."
+
+msgid "Тексты были записаны и расшифровывались в ходе работы экспедиций РГГУ и НИУ ВШЭ в 2011-2013 годах; в дальнейшем в расшифровке корпусов также принимала участие И.Г. Багирокова (Институт языкознания РАН / НИУ ВШЭ). Морфологический анализ текстов был проведён участниками экспедиций под общим руководством П. М. Аркадьева (Институт славяноведения РАН / РГГУ) при участии Ю. А. Ландера (НИУ ВШЭ). Техническая работа над корпусом выполнена А. Д. Сорокиной (НИУ ВШЭ) при поддержке Международной лаборатории языковой конвергенции НИУ «Высшая школа экономики» в 2020 году. Корпус создан в рамках Программы фундаментальных исследований Национального исследовательского университета «Высшая школа экономики» (НИУ ВШЭ) и с использованием средств субсидии в рамках государственной поддержки ведущих университетов Российской Федерации «5-100»."
+msgstr "The texts were recorded and glossed during expeditions by the Russian State University of the Humanities (RSUH) and Higher School of Economics (HSE University) in 2011-2013, and Irina Bagirokova (HSE University) also took part in later glossing work on the corpora.  Morphological analysis was carried out by expedition participants under the supervision of Peter Arkadiev (Institute for Slavic Studies RAS / RSUH) with the additional participation of Yury Lander (HSE University).  Technical work on the corpus was completed by Anna Sorokina and Elena Sokur (HSE university) with support from the Linguistic Convergence Laboratory at HSE University in 2020.  The corpus was created within the framework of the HSE University Basic Research Program and funded by the Russian Academic Excellence Project '5-100'."
+
+msgid "В настоящее время корпус работает в закрытом режиме. Запросить доступ к корпусу можно у Ю. А. Ландера (yulander@hse.ru)."
+msgstr "The corpus currently operates under a closed system of access.  To receive permission to access the corpus, write to Yury Lander (yulander@hse.ru)."
+
+msgid "Юрий Александрович Ландер"
+msgstr "Yury Lander"
+
+msgid "Петр Аркадьев, Ирина Багирокова, Анна Сорокина, Елена Сокур. 2020. Устный корпус бесленеевского диалекта кабардино-черкесского языка. М.: Международная лаборатория языковой конвергенции, НИУ ВШЭ. (Доступно онлайн по адресу: http://lingconlab.ru/spoken_besleney, дата обращения"
+msgstr "Peter Arkadiev, Irina Bagirokova, Anna Sorokina, Elena Sokur. 2020. Corpus of oral texts in Besleney Kabardian. Moscow: Linguistic Convergence Laboratory, HSE University. (Available online at https://lingconlab.ru/spoken_besleney/, accessed on"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

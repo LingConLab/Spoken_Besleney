@@ -93,7 +93,6 @@
             {"type": "gramm", "value": "2sg.io", "category": "2sg.io", "tooltip": "личный префикс, косвенный объект"},
             {"type": "gramm", "value": "2sg.pr", "category": "2sg.pr", "tooltip": "посессивный показатель"},
             {"type": "gramm", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
-            {"type": "gramm", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
             {"type": "gramm", "value": "3pl.io", "category": "3pl.io", "tooltip": "личный префикс, косвенный объект"},
             {"type": "gramm", "value": "3pl.pr", "category": "3pl.pr", "tooltip": "посессивный показатель"},
             {"type": "gramm", "value": "3sg.erg", "category": "3sg.erg", "tooltip": "личный префикс, эргатив"}
@@ -209,7 +208,6 @@
             {"type": "gloss", "value": "2sg.erg", "category": "2sg.erg", "tooltip": "личный префикс, эргатив"},
             {"type": "gloss", "value": "2sg.io", "category": "2sg.io", "tooltip": "личный префикс, косвенный объект"},
             {"type": "gloss", "value": "2sg.pr", "category": "2sg.pr", "tooltip": "посессивный показатель"},
-            {"type": "gloss", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
             {"type": "gloss", "value": "3pl.erg", "category": "3pl.erg", "tooltip": "личный префикс, эргатив"},
             {"type": "gloss", "value": "3pl.io", "category": "3pl.io", "tooltip": "личный префикс, косвенный объект"},
             {"type": "gloss", "value": "3pl.pr", "category": "3pl.pr", "tooltip": "посессивный показатель"},

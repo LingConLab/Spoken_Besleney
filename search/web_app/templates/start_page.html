@@ -18,6 +18,13 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type='text/javascript' src='static/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='static/js/result_parser.js'></script>
+<script type='text/javascript' src='static/js/json_loaders.js'></script>
+<script type='text/javascript' src='static/js/query_share_load.js'></script>
 
     <!-- Custom styles for this template -->
     <link href="static/css/resume.min.css" rel="stylesheet">
@@ -26,6 +33,21 @@
   </head>
 
   <body id="page-top">
+
+        <p style="padding-left:2.7rem" id="about">
+
+    {% if locales|length > 1 %}
+&nbsp;&nbsp;
+{% for l_code in locales %}
+  <span class="locale" title="{{ locales[l_code] }}">{{ l_code|upper }}</span>&nbsp;
+  {% if not last %}
+    |&nbsp;
+  {% else %}
+    |&nbsp;&nbsp;
+  {% endif %}
+{% endfor %}
+{% endif %}
+    </p>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -126,22 +148,6 @@
             </script>
 </div>
           
-          <div class="panel panel-default">
-            <div class="panel-body" align="justify">{{ _('Peter Arkadiev, Irina Bagirokova, Anna Sorokina, Elena Sokur. 2020. Corpus of oral texts in Besleney Kabardian. Moscow: Linguistic Convergence Laboratory, HSE University. (Available online at https://lingconlab.ru/spoken_besleney/, accessed on') }} <c id="dateFolder2"></c>.)</div>
-            <script language="JavaScript">
-            temp_date = new Date();
-            day = temp_date.getDate();
-            month = temp_date.getMonth() + 1;
-            year = temp_date.getFullYear();
-            if (day < 10) {
-            day = "0" + day;
-            }
-            if (month <10) {
-            month = "0" + month;
-            }
-            document.getElementById('dateFolder2').innerHTML = day + "." + month + "." + year;
-            </script>
-          </div>
         </div>
       </section>
 
