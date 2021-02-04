@@ -13,7 +13,6 @@
   "viewable_meta": [
     "filename",
     "title",
-    "place",
     "speakers",
     "year"
   ],
@@ -46,8 +45,8 @@
   [
   ],
   "languages": ["besleney", "russian"],
-  "transliterations": ["original", "IPA"],
-  "input_methods": ["normal", "strict"],
+  "transliterations": ["original"],
+  "input_methods": ["normal"],
   "interface_languages": {"en": "English", "ru": "Russian"},
   "all_language_search_enabled": true,
   "gloss_search_enabled": true,

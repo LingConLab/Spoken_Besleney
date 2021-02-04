@@ -1099,3 +1099,10 @@ msgstr "Здесь можно загрузить запрос к корпусу,
 
 msgid "To download all results, scroll to the last page."
 msgstr "Для скачивания полной выдачи пролистайте до последней страницы."
+
+
+msgid "Word (orth):"
+msgstr "Слово (орф):"
+
+msgid "Word (trans):"
+msgstr "Слово (транс):"

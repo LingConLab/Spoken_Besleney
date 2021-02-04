@@ -490,14 +490,16 @@ class Eaf2JSON(Txt2JSON):
         srcTree = etree.parse(fnameSrc)
         self.tlis = self.get_tlis(srcTree)
         self.build_segment_tree(srcTree)
+        print(fnameSrc)
         srcFileNode = srcTree.xpath('/ANNOTATION_DOCUMENT/HEADER/MEDIA_DESCRIPTOR')
         if len(srcFileNode) > 0 and 'RELATIVE_MEDIA_URL' in srcFileNode[0].attrib:
             srcFile = self.rxStripDir.sub('', html.unescape(srcFileNode[0].attrib['RELATIVE_MEDIA_URL']))
+
         elif len(srcFileNode) > 0 and 'MEDIA_URL' in srcFileNode[0].attrib:
             # srcFile = self.rxStripDir.sub('', html.unescape(srcFileNode[0].attrib['MEDIA_URL']))
-            srcFile = fnameSrc.strip('..\\eaf\\') + '.mp4'
+            srcFile = fnameSrc.replace('..\\eaf\\', '').replace('.eaf', '.mp4')
         else:
-            srcFile = fnameSrc.strip('..\\eaf\\') + '.mp4'
+            srcFile = fnameSrc.replace('..\\eaf\\', '').replace('.eaf', '.mp4')
         textJSON['sentences'] = [s for s in self.get_sentences(srcTree, srcFile)]
         textJSON['sentences'].sort(key=lambda s: (s['lang'], s['src_alignment'][0]['true_off_start_src']))
         for i in range(len(textJSON['sentences']) - 1):
