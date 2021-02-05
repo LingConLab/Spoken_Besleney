@@ -135,7 +135,7 @@ if __name__ == '__main__':
     mc = MediaCutter(settings)
     for path, dirs, files in os.walk('../audio'):
         for fname in files:
-            if fname.lower().endswith('.wav'):
+            if fname.lower().endswith(('.wav', '.wma', '.mp3')):
                 print(fname) 
                 fname = os.path.abspath(os.path.join(path, fname))
                 print('Starting', fname)

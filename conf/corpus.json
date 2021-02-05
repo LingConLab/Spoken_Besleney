@@ -46,7 +46,7 @@
   ],
   "languages": ["besleney", "russian"],
   "transliterations": ["original"],
-  "input_methods": ["normal"],
+  "input_methods": ["normal", "strict"],
   "interface_languages": {"en": "English", "ru": "Russian"},
   "all_language_search_enabled": true,
   "gloss_search_enabled": true,
